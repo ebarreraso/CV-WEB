@@ -1,29 +1,149 @@
 /*========= GOOGLE FONTS =======*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,200;1,300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,200;1,300&display=swap'); */
 
 
 /*========= VARIABLES CSS =======*/
 
-
-:root{
-
-    /*========= COLORS =======*/
-
-    --titulo-color:#0B0A0A;
-    --sub-titulo-color:#0B0A0A;
-    --titulo-p: red;
-
-
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family:'Poppins', sans-serif;
 }
 
 body{
-    font-family:'Poppins',sans-serif;
+    margin-left: 80px;
+
+} 
+
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    z-index: 200;
 }
 
-.titulo{
-    color: var(--titulo-p);
+.icon__menu{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
 }
+
+.icon__menu i{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.menu_side{
+    width: 80px;
+    height: 100%;
+    background-color: #52bbaa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #52bbaa;
+}
+
+.menu_side::-webkit-scrollbar{
+    display: none;
+}
+
+.menu_side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.name__page{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name__page i{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.options__menu{
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+}
+
+.options__menu a{
+    color: #e0dddd;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+.options__menu a:hover{
+    color: rgb(255, 255, 255);
+
+}
+
+.options__menu .option{
+    padding: 20px 0;
+    display: flex;
+    align-self: center;
+    position: relative;
+}
+
+.options__menu .option i{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h6{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+a.selected{
+    color:#fff;
+}
+
+
+.selected::before{
+    content: '';
+    width: 3px;
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+/*Clases*/
+
+.body_move{
+    margin-left: 250px;
+    /*background-color: red;*/
+}
+
+.menu_side_move{
+    width: 250px;
+   /* background-color: red;*/
+}
+
+
