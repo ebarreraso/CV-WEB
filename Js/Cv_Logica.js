@@ -3,6 +3,7 @@
 
 //Ejecutar funcion el evento click
 document.getElementById("btn_open").addEventListener('click', open_close_menu);
+document.getElementById("huella").addEventListener('click', open_close_menu);
 
 //Declarar variables
 var side_menu = document.getElementById("menu_side");
